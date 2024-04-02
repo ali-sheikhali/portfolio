@@ -7,18 +7,19 @@ import { PiSquaresFourThin } from "react-icons/pi";
 import { MdCastForEducation } from "react-icons/md";
 import { LuPhone } from "react-icons/lu";
 import SocialMedia from "../SocialMedia";
+import Logoimg from "../Logoimg";
 
 function MobileBar() {
   return (
-    <div className="bg-[#4A63E7] text-white w-11/12 mx-auto my-5 py-3 px-7 rounded-2xl">
+    <div className="bg-[#4A63E7] flex justify-start space-x-5 items-center text-white w-11/12 mx-auto my-5 py-3 px-7 rounded-2xl">
       <div>
         <Menu>
-          <Menu.Button>
+          <Menu.Button className="text-2xl">
             <FaBarsStaggered />
           </Menu.Button>
           <Menu.Items
             className="absolute bg-[#4A63E7] 
-          flex flex-col space-y-2 w-11/12 mt-4 left-5 rounded-2xl py-3 px-7 z-10"
+          flex flex-col space-y-2 w-11/12 mt-4 left-4 md:left-8 rounded-2xl py-3 px-7 z-10"
           >
             <Menu.Item className="hover:ml-2 transition-all ease-linear duration-300">
               {({ active }) => (
@@ -75,6 +76,10 @@ function MobileBar() {
             </span>
           </Menu.Items>
         </Menu>
+      </div>
+      <div className="flex items-center space-x-5">
+        <Logoimg style={{ width: "40px", height: "40px" }}/>
+        <p className="font-bold text-2xl">Ali Sheikhali</p>
       </div>
     </div>
   );
