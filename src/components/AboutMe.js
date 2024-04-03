@@ -5,7 +5,7 @@ import Buttons from "./Buttons";
 function AboutMe() {
   return (
     <div className="shadow-inner space-y-10 my-10 p-5 border rounded-xl border-[#efefef]">
-      <h3 className="font-bold border-b-4 border-red-400 w-fit">About Me</h3>
+      <h3 className="font-bold text-2xl border-b-4 border-red-400 w-fit">About Me</h3>
       <figure>
         <span className="md:hidden">
           <Logoimg style={{ width: "120px", height: "120px" }} />

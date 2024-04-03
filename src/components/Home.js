@@ -4,10 +4,12 @@ import WideScreenNavBar from "./navbar/WideScreenNavBar";
 import HeroHeader from "./HeroHeader";
 import AboutMe from "./AboutMe";
 import MySkills from "./MySkills";
+import GotoTop from "./GotoTop";
 
 function Home() {
   return (
     <div className="">
+      <GotoTop />
       <div className="lg:hidden w-11/12 mx-auto my-5">
         <MobileBar />
         <HeroHeader />
