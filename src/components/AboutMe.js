@@ -4,10 +4,15 @@ import Buttons from "./Buttons";
 
 function AboutMe() {
   return (
-    <div className="shadow-xl space-y-10 my-5 p-5 border rounded-xl border-[#efefef]">
+    <div className="shadow-inner space-y-10 my-10 p-5 border rounded-xl border-[#efefef]">
       <h3 className="font-bold border-b-4 border-red-400 w-fit">About Me</h3>
       <figure>
-        <Logoimg style={{ width: "90px", height: "90px" }} />
+        <span className="md:hidden">
+          <Logoimg style={{ width: "120px", height: "120px" }} />
+        </span>
+        <span className="hidden md:block">
+          <Logoimg style={{ width: "180px", height: "180px" }} />
+        </span>
       </figure>
       <div className="space-y-4">
         <h2 className="font-bold text-3xl">Hello.</h2>
