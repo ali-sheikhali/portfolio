@@ -12,7 +12,7 @@ function WideScreenNavBar() {
     <div className="">
       <div
         className="bg-[#4A63E7] flex flex-col justify-start space-y-8 
-     text-white  my-5 py-10 px-7 rounded-2xl"
+     text-white my-5 py-10 px-7 rounded-2xl"
       >
         <div className="flex flex-col items-start space-y-3 my-3">
           <Logoimg style={{ width: "70px", height: "70px" }} />
