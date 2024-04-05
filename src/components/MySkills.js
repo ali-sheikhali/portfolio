@@ -1,6 +1,5 @@
 import React from "react";
 import Buttons from "./Buttons";
-
 function MySkills() {
   return (
     <div className="shadow-inner space-y-10 my-10 p-5 border rounded-xl border-[#efefef]">

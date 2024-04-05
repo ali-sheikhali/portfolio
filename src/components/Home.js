@@ -5,6 +5,7 @@ import HeroHeader from "./HeroHeader";
 import AboutMe from "./AboutMe";
 import MySkills from "./MySkills";
 import GotoTop from "./GotoTop";
+import Portfolio from "./Portfolio";
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
         <HeroHeader />
         <AboutMe />
         <MySkills />
+        <Portfolio />
       </div>
       <div className="hidden lg:flex w-11/12 mx-auto xl:w-9/12 gap-5">
         <div className="w-3/12">
@@ -24,6 +26,7 @@ function Home() {
           <HeroHeader />
           <AboutMe />
           <MySkills />
+          <Portfolio />
         </div>
       </div>
     </div>

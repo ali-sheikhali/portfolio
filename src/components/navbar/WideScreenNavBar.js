@@ -7,6 +7,7 @@ import { MdCastForEducation } from "react-icons/md";
 import { LuPhone } from "react-icons/lu";
 import WIdeItems from "./WIdeItems";
 import SocialMedia from "../SocialMedia";
+
 function WideScreenNavBar() {
   return (
     <div className="fixed ">
