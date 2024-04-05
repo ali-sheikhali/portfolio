@@ -6,8 +6,12 @@ import AboutMe from "./AboutMe";
 import MySkills from "./MySkills";
 import GotoTop from "./GotoTop";
 import Portfolio from "./Portfolio";
+import { useRef } from "react";
 
 function Home() {
+
+  const portfolioRef = useRef(null)
+
   return (
     <div className="">
       <GotoTop />
@@ -20,13 +24,13 @@ function Home() {
       </div>
       <div className="hidden lg:flex w-11/12 mx-auto xl:w-9/12 gap-5">
         <div className="w-3/12">
-          <WideScreenNavBar />
+          <WideScreenNavBar portfolioRef={portfolioRef} />
         </div>
         <div className="w-9/12">
           <HeroHeader />
           <AboutMe />
           <MySkills />
-          <Portfolio />
+          <Portfolio portfolioRef={portfolioRef} />
         </div>
       </div>
     </div>
