@@ -8,6 +8,7 @@ import GotoTop from "./GotoTop";
 import Portfolio from "./Portfolio";
 import { useRef } from "react";
 import Career from "./Career";
+import GetInTouch from "./form/GetInTouch";
 
 function Home() {
   const portfolioRef = useRef(null);
@@ -23,6 +24,7 @@ function Home() {
         <MySkills />
         <Portfolio />
         <Career />
+        <GetInTouch />
       </div>
       <div className="hidden lg:flex w-11/12 mx-auto xl:w-9/12 gap-5">
         <div className="w-3/12">
@@ -34,6 +36,7 @@ function Home() {
           <MySkills />
           <Portfolio portfolioRef={portfolioRef} />
           <Career />
+          <GetInTouch />
         </div>
       </div>
     </div>
