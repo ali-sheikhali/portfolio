@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
-function PortfolioFigure({ image }) {
-    
+function PortfolioFigure({ image, name }) {
   const [showDetail, setShowDetail] = useState(false);
   const handleMouseEnter = () => {
     setShowDetail(true);
@@ -11,17 +10,20 @@ function PortfolioFigure({ image }) {
     setShowDetail(false);
   };
   return (
-    <figure className="relative">
+    <figure
+      className="relative"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <img
         className="rounded-lg shadow-lg hover:bg-[#FF5959]"
         src={image}
         alt=""
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
       />
       {showDetail && (
-        <div className="absolute top-1/2 left-1/2 transition -translate-x-1/2 -translate-y-1/2">
-          <p>more Detail</p>
+        <div className="absolute top-0 left-0 w-full h-full
+         flex items-center justify-center bg-[#4A63E7] bg-opacity-50 rounded-lg">
+          <p className="">{name}</p>
         </div>
       )}
     </figure>
@@ -29,6 +31,3 @@ function PortfolioFigure({ image }) {
 }
 
 export default PortfolioFigure;
-
-
-

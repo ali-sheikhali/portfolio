@@ -2,10 +2,15 @@ import React from "react";
 import Logoimg from "./Logoimg";
 import Buttons from "./Buttons";
 
-function AboutMe() {
+function AboutMe({ aboutRef }) {
   return (
-    <div className="shadow-inner space-y-10 my-10 p-5 border rounded-xl border-[#efefef]">
-      <h3 className="font-bold text-2xl border-b-4 border-red-400 w-fit">About Me</h3>
+    <div
+      ref={aboutRef}
+      className="shadow-inner space-y-10 my-10 p-5 border rounded-xl border-[#efefef]"
+    >
+      <h3 className="font-bold text-2xl border-b-4 border-red-400 w-fit">
+        About Me
+      </h3>
       <figure>
         <span className="md:hidden">
           <Logoimg style={{ width: "120px", height: "120px" }} />

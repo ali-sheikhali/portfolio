@@ -1,9 +1,9 @@
 import React from "react";
 import Buttons from "./Buttons";
 
-function HeroHeader() {
+function HeroHeader({HeroHeaderRef}) {
   return (
-    <div className="bg-[#4A63E7] rounded-2xl  text-white my-5 lg:h-[650px]">
+    <div ref={HeroHeaderRef} className="bg-[#4A63E7] rounded-2xl  text-white my-5 lg:h-[650px]">
       <div className="w-10/12 mx-auto space-y-10 lg:py-44 py-20">
         <div className="space-y-10">
           <h1 className="font-bold text-4xl">I 'm Ali Sheikhali</h1>

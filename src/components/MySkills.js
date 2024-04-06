@@ -22,6 +22,7 @@ function MySkills() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 justify-items-center">
         <Buttons
           name="HTML"
+          className="button-style"
           style={{
             backgroundColor: "rgba(255, 89, 89, 0.4)",
             border: "3px solid #FF5959",
