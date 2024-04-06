@@ -7,6 +7,7 @@ import MySkills from "./MySkills";
 import GotoTop from "./GotoTop";
 import Portfolio from "./Portfolio";
 import { useRef } from "react";
+import Career from "./Career";
 
 function Home() {
   const portfolioRef = useRef(null);
@@ -21,6 +22,7 @@ function Home() {
         <AboutMe />
         <MySkills />
         <Portfolio />
+        <Career />
       </div>
       <div className="hidden lg:flex w-11/12 mx-auto xl:w-9/12 gap-5">
         <div className="w-3/12">
@@ -31,6 +33,7 @@ function Home() {
           <AboutMe aboutRef={aboutRef} />
           <MySkills />
           <Portfolio portfolioRef={portfolioRef} />
+          <Career />
         </div>
       </div>
     </div>
