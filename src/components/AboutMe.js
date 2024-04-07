@@ -1,6 +1,8 @@
 import React from "react";
 import Logoimg from "./Logoimg";
 import Buttons from "./Buttons";
+import { IoCloudDownloadOutline } from "react-icons/io5";
+import { LuPhone } from "react-icons/lu";
 
 function AboutMe({ aboutRef }) {
   return (
@@ -50,8 +52,8 @@ function AboutMe({ aboutRef }) {
         </p>
       </div>
       <div className="text-white space-y-3 md:flex md:space-y-0 md:space-x-3">
-        <Buttons name="Download CV" style={{ backgroundColor: "#EF4444" }} />
-        <Buttons name="Contact Me" style={{ backgroundColor: "#4A63E7" }} />
+        <Buttons name="Download CV"  logo={<IoCloudDownloadOutline />} style={{ backgroundColor: "#EF4444" }} />
+        <Buttons name="Contact Me" logo={<LuPhone />} style={{ backgroundColor: "#4A63E7" }} />
       </div>
     </div>
   );

@@ -14,6 +14,7 @@ function Home() {
   const portfolioRef = useRef(null);
   const aboutRef = useRef(null)
   const HeroHeaderRef = useRef(null)
+  const GetInTouchRef = useRef(null)
   return (
     <div className="">
       <GotoTop />
@@ -28,7 +29,7 @@ function Home() {
       </div>
       <div className="hidden lg:flex w-11/12 mx-auto xl:w-9/12 gap-5">
         <div className="w-3/12">
-          <WideScreenNavBar portfolioRef={portfolioRef} aboutRef={aboutRef} HeroHeaderRef={HeroHeaderRef} />
+          <WideScreenNavBar portfolioRef={portfolioRef} aboutRef={aboutRef} HeroHeaderRef={HeroHeaderRef} GetInTouchRef={GetInTouchRef} />
         </div>
         <div className="w-9/12">
           <HeroHeader HeroHeaderRef={HeroHeaderRef}/>
@@ -36,7 +37,7 @@ function Home() {
           <MySkills />
           <Portfolio portfolioRef={portfolioRef} />
           <Career />
-          <GetInTouch />
+          <GetInTouch GetInTouchRef={GetInTouchRef}/>
         </div>
       </div>
     </div>

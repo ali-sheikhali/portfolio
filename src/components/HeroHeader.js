@@ -1,5 +1,6 @@
 import React from "react";
 import Buttons from "./Buttons";
+import { PiSquaresFourThin } from "react-icons/pi";
 
 function HeroHeader({HeroHeaderRef}) {
   return (
@@ -15,6 +16,7 @@ function HeroHeader({HeroHeaderRef}) {
         <div className="flex flex-col md:flex-row gap-5 font-bold">
           <Buttons
             name="View Portfolio"
+           logo={<PiSquaresFourThin />}
             style={{ backgroundColor: "rgb(239 68 68 / var(--tw-bg-opacity))" }}
           />
           <Buttons

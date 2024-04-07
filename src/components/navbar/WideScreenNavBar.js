@@ -8,7 +8,12 @@ import { LuPhone } from "react-icons/lu";
 import WIdeItems from "./WIdeItems";
 import SocialMedia from "../SocialMedia";
 
-function WideScreenNavBar({ portfolioRef, aboutRef, HeroHeaderRef }) {
+function WideScreenNavBar({
+  portfolioRef,
+  aboutRef,
+  HeroHeaderRef,
+  GetInTouchRef,
+}) {
   const handleClick = (ref) => {
     if (ref.current) {
       ref.current.scrollIntoView({
@@ -46,7 +51,11 @@ function WideScreenNavBar({ portfolioRef, aboutRef, HeroHeaderRef }) {
             onClick={() => handleClick(portfolioRef)}
           />
           <WIdeItems name="Eduction" icons={<MdCastForEducation />} />
-          <WIdeItems name="Contact" icons={<LuPhone />} />
+          <WIdeItems
+            name="Contact"
+            icons={<LuPhone />}
+            onClick={() => handleClick(GetInTouchRef)}
+          />
         </div>
         <div className="pt-24">
           <SocialMedia />

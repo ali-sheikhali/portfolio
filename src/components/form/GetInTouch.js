@@ -5,7 +5,10 @@ import * as yup from "yup";
 import { MdOutlineEmail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import Loaction from "./Loaction";
-function GetInTouch() {
+import Buttons from "../Buttons";
+import { FiSend } from "react-icons/fi";
+
+function GetInTouch({GetInTouchRef}) {
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -22,7 +25,7 @@ function GetInTouch() {
     }),
   });
   return (
-    <div className="shadow-inner space-y-10 my-10 p-5 border rounded-xl border-[#efefef]">
+    <div ref={GetInTouchRef} className="shadow-inner space-y-10 my-10 p-5 border rounded-xl border-[#efefef]">
       <h3 className="font-bold text-2xl border-b-4 border-red-400 w-fit">
         Get in Touch
       </h3>
@@ -74,6 +77,11 @@ function GetInTouch() {
           className="textarea textarea-bordered h-32"
           placeholder="Message"
         ></textarea>
+        <Buttons
+          name="Send Message"
+          logo={<FiSend />}
+          style={{ backgroundColor: "#FF5959", color: "white" }}
+        />
       </div>
     </div>
   );

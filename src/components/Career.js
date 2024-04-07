@@ -8,10 +8,20 @@ function Career() {
         Career
       </h3>
 
-      <div className="timeline timeline-vertical">  
-          <CareerTimeLine age="1998" title="born in Tehran" />
-          <CareerTimeLine age="1998" title="i was born in" />
-          <CareerTimeLine age="1998" title="i was born in" />
+      <div className="timeline timeline-vertical right-24 lg:right-56">
+        <CareerTimeLine age="1998" title="born in Tehran" />
+        <CareerTimeLine
+          age="2017"
+          title="i was Start First job at esm Publications"
+        />
+        <CareerTimeLine
+          age="2021"
+          title="I was hired as a sales manager at Ariana ghalam Publications"
+        />
+        <CareerTimeLine
+          age="2023"
+          title="change Career path, I started learning front-end programming"
+        />
       </div>
     </div>
   );
