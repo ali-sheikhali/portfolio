@@ -19,7 +19,7 @@ function MySkills() {
         evolving and progressing, and I continue to eagerly learn and update my
         skills.
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 justify-items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 justify-items-center">
         <Buttons
           name="HTML"
           className="button-style"
@@ -28,6 +28,7 @@ function MySkills() {
             border: "3px solid #FF5959",
             width: "180px",
           }}
+          hover="true"
         />
         <Buttons
           name="Css"
@@ -36,6 +37,7 @@ function MySkills() {
             border: "3px solid #FF5959",
             width: "180px",
           }}
+          hover="true"
         />
         <Buttons
           name="Tailwind Css"
@@ -44,6 +46,7 @@ function MySkills() {
             border: "3px solid #FF5959",
             width: "180px",
           }}
+          hover="true"
         />
         <Buttons
           name="JavaScript"
@@ -52,6 +55,7 @@ function MySkills() {
             border: "3px solid #FF5959",
             width: "180px",
           }}
+          hover="true"
         />
         <Buttons
           name="React"
@@ -60,6 +64,7 @@ function MySkills() {
             border: "3px solid #FF5959",
             width: "180px",
           }}
+          hover="true"
         />
         <Buttons
           name="Next.js"
@@ -68,6 +73,7 @@ function MySkills() {
             border: "3px solid #FF5959",
             width: "180px",
           }}
+          hover="true"
         />
       </div>
     </div>
