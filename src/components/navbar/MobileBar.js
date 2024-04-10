@@ -8,10 +8,21 @@ import { MdCastForEducation } from "react-icons/md";
 import { LuPhone } from "react-icons/lu";
 import SocialMedia from "../SocialMedia";
 import Logoimg from "../Logoimg";
+import { Link } from "react-router-dom";
 
-function MobileBar() {
+function MobileBar({ portfolioRef, aboutRef, HeroHeaderRef, GetInTouchRef }) {
+  
+  const handleClick = (ref, event) => {
+    console.log(ref.current);
+    event.preventDefault();
+    if (ref.current) {
+      ref.current.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
   return (
-    <div className="bg-[#4A63E7] flex justify-start space-x-5 items-center text-white py-3 px-7 rounded-2xl">
+    <div className="bg-[#384db7] flex justify-start space-x-5 items-center text-white py-3 px-7 rounded-2xl">
       <div>
         <Menu>
           <Menu.Button className="text-2xl">
@@ -23,52 +34,68 @@ function MobileBar() {
           >
             <Menu.Item className="hover:ml-2 transition-all ease-linear duration-300">
               {({ active }) => (
-                <a className="flex space-x-3" href="#">
+                <Link
+                  to="/"
+                  onClick={(event) => handleClick(HeroHeaderRef, event)}
+                  className="flex space-x-3 cursor-pointer"
+                >
                   <span className="mt-1">
                     <AiOutlineHome />
                   </span>
                   <span>Home</span>
-                </a>
+                </Link>
               )}
             </Menu.Item>
             <Menu.Item className="hover:ml-2 transition-all ease-linear duration-300">
               {({ active }) => (
-                <a className="flex space-x-3" href="#">
+                <Link
+                  className="flex space-x-3 cursor-pointer"
+                  onClick={(event) => handleClick(aboutRef, event)}
+                  to="/"
+                >
                   <span className="mt-1">
                     <IoPersonOutline />
                   </span>
                   <span>about</span>
-                </a>
+                </Link>
               )}
             </Menu.Item>
             <Menu.Item className="hover:ml-2 transition-all ease-linear duration-300">
               {({ active }) => (
-                <a className="flex space-x-3" href="#">
+                <Link
+                  className="flex space-x-3 cursor-pointer"
+                  onClick={(event) => handleClick(portfolioRef, event)}
+                  to="/"
+                >
                   <span className="mt-1">
                     <PiSquaresFourThin />
                   </span>
                   <span>Portfolio</span>
-                </a>
+                </Link>
               )}
             </Menu.Item>
             <Menu.Item className="hover:ml-2 transition-all ease-linear duration-300">
               {({ active }) => (
-                <a className="flex space-x-3" href="#">
+                <Link className="flex space-x-3">
                   <span className="mt-1">
                     <MdCastForEducation />
                   </span>
                   <span>Eduction</span>
-                </a>
+                </Link>
               )}
             </Menu.Item>
             <Menu.Item className="hover:ml-2 transition-all ease-linear duration-300">
               {({ active }) => (
-                <a className="flex space-x-3" href="#">
+                <Link
+                  className="flex space-x-3 cursor-pointer " 
+                  onClick={(event) => handleClick(GetInTouchRef, event)}
+                  to="/"
+                >
                   <span className="mt-1">
                     <LuPhone />
                   </span>
                   <span>Contact</span>
-                </a>
+                </Link>
               )}
             </Menu.Item>
             <span className="flex justify-center">
