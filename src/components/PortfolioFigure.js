@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { GoPlus } from "react-icons/go";
 
-function PortfolioFigure({ image, name }) {
+function PortfolioFigure({ image, name, id }) {
   const [showDetail, setShowDetail] = useState(false);
   const handleMouseEnter = () => {
     setShowDetail(true);
@@ -12,7 +12,7 @@ function PortfolioFigure({ image, name }) {
     setShowDetail(false);
   };
   return (
-    <Link to="">
+    <Link to={`/portfolio/${id}`}>
       <figure
         className="relative"
         onMouseEnter={handleMouseEnter}

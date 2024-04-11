@@ -5,6 +5,12 @@ import learning from "../media/learning.png";
 import weather from "../media/weather.png";
 import shop from "../media/shop.png";
 function Portfolio({ portfolioRef }) {
+  const portfolioItems = [
+    { id: 1, name: "TMDB movie Website", image: tmdb },
+    { id: 2, name: "Learning Website", image: learning },
+    { id: 3, name: "Weather Website", image: weather },
+    { id: 4, name: "Shop Website", image: shop },
+  ];
   return (
     <div
       ref={portfolioRef}
@@ -15,10 +21,14 @@ function Portfolio({ portfolioRef }) {
       </h3>
       <div>
         <div className="w-9/12 md:w-10/12 lg:w-11/12 mx-auto gap-10 grid grid-cols-1 md:grid-cols-2">
-          <PortfolioFigure name="TMDB movie Website" image={tmdb} />
-          <PortfolioFigure name="Learning Website" image={learning} />
-          <PortfolioFigure name="Weather Website" image={weather} />
-          <PortfolioFigure name="shop Website" image={shop} />
+          {portfolioItems.map((item) => (
+            <PortfolioFigure
+              key={item.id}
+              id={item.id}
+              name={item.name}
+              image={item.image}
+            />
+          ))}
         </div>
       </div>
     </div>
