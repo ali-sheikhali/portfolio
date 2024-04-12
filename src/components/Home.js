@@ -15,10 +15,7 @@ function Home() {
   const aboutRef = useRef(null);
   const HeroHeaderRef = useRef(null);
   const GetInTouchRef = useRef(null);
-  console.log("Portfolio Ref:", portfolioRef);
-console.log("About Ref:", aboutRef);
-console.log("Hero Header Ref:", HeroHeaderRef);
-console.log("Get In Touch Ref:", GetInTouchRef);
+
   return (
     <div className="">
       <GotoTop />
@@ -29,12 +26,12 @@ console.log("Get In Touch Ref:", GetInTouchRef);
           HeroHeaderRef={HeroHeaderRef}
           GetInTouchRef={GetInTouchRef}
         />
-        <HeroHeader  HeroHeaderRef={HeroHeaderRef}/>
-        <AboutMe aboutRef={aboutRef}/>
+        <HeroHeader HeroHeaderRef={HeroHeaderRef} />
+        <AboutMe aboutRef={aboutRef} />
         <MySkills />
-        <Portfolio portfolioRef={portfolioRef}/>
+        <Portfolio portfolioRef={portfolioRef} />
         <Career />
-        <GetInTouch GetInTouchRef={GetInTouchRef}/>
+        <GetInTouch GetInTouchRef={GetInTouchRef} />
       </div>
       <div className="hidden lg:flex w-11/12 mx-auto xl:w-9/12 gap-5">
         <div className="w-3/12">

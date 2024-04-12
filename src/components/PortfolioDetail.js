@@ -1,13 +1,33 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import WideScreenNavBar from "./navbar/WideScreenNavBar";
+import MobileBar from "./navbar/MobileBar";
 function PortfolioDetail() {
   const { id } = useParams();
   return (
-    <div>
-      <h2>Portfolio Detail</h2>
-      <p>ID: {id}</p>
-      <figure>
-      </figure>
+    <div >
+      <div className="lg:hidden w-11/12 mx-auto my-5">
+        <div>
+          <MobileBar />
+        </div>
+        <div>
+          <div className="border my-10">
+            <h2>Portfolio Detail</h2>
+            <p>ID: {id}</p>
+          </div>
+        </div>
+      </div>
+      <div className="hidden lg:flex w-11/12 mx-auto xl:w-9/12 gap-5">
+        <div className="w-3/12">
+          <Link to="/">
+            <WideScreenNavBar />
+          </Link>
+        </div>
+        <div className="w-9/12 border">
+          <h2>Portfolio Detail</h2>
+          <p>ID: {id}</p>
+        </div>
+      </div>
     </div>
   );
 }

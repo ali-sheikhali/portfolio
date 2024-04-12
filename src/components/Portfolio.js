@@ -4,6 +4,7 @@ import tmdb from "../media/tmdblogo.png";
 import learning from "../media/learning.png";
 import weather from "../media/weather.png";
 import shop from "../media/shop.png";
+
 function Portfolio({ portfolioRef }) {
   const portfolioItems = [
     { id: 1, name: "TMDB movie Website", image: tmdb },

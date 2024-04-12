@@ -15,7 +15,7 @@ function WideScreenNavBar({
   GetInTouchRef,
 }) {
   const handleClick = (ref) => {
-    if (ref.current) {
+    if (ref && ref.current) {
       ref.current.scrollIntoView({
         behavior: "smooth",
       });
