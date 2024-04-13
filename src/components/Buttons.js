@@ -19,7 +19,7 @@ function Buttons({ name, style, logo, hover }) {
           hover
             ? (e) => {
                 e.target.style.backgroundColor = style.backgroundColor;
-                e.target.style.color = style.color || ""; // Reset to default color if specified
+                e.target.style.color = style.color || "";
               }
             : null
         }

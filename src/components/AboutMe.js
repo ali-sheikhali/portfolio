@@ -52,8 +52,20 @@ function AboutMe({ aboutRef }) {
         </p>
       </div>
       <div className="text-white space-y-3 md:flex md:space-y-0 md:space-x-3">
-        <Buttons name="Download CV"  logo={<IoCloudDownloadOutline />} style={{ backgroundColor: "#EF4444" }} />
-        <Buttons name="Contact Me" logo={<LuPhone />} style={{ backgroundColor: "#4A63E7" }} />
+        <Buttons
+          name="Download CV"
+          logo={<IoCloudDownloadOutline />}
+          style={{ backgroundColor: "#EF4444" }}
+        >
+          <a href="/media/cv.pdf" download>
+            hello
+          </a>
+        </Buttons>
+        <Buttons
+          name="Contact Me"
+          logo={<LuPhone />}
+          style={{ backgroundColor: "#4A63E7" }}
+        />
       </div>
     </div>
   );
