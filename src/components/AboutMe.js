@@ -57,8 +57,8 @@ function AboutMe({ aboutRef }) {
           logo={<IoCloudDownloadOutline />}
           style={{ backgroundColor: "#EF4444" }}
         >
-          <a href="/media/cv.pdf" download>
-            hello
+          <a href="../media/cv.pdf" download aria-label="Download CV">
+            Download CV
           </a>
         </Buttons>
         <Buttons

@@ -23,7 +23,7 @@ function PortfolioDetail() {
             <WideScreenNavBar />
           </Link>
         </div>
-        <div className="w-9/12 border">
+        <div className="w-9/12 border my-5 rounded-lg">
           <h2>Portfolio Detail</h2>
           <p>ID: {id}</p>
         </div>
