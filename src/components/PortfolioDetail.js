@@ -9,8 +9,13 @@ import shop from "../media/shop.png";
 function PortfolioDetail() {
   const { id } = useParams();
   let img;
+  let para;
+  let challenge;
   if (id === "1") {
     img = tmdb;
+    para =
+      "I designed and developed a React-based practice project resembling the TMDB Movie website";
+    challenge = "use Redux toolkit for state management use Swr for api use formik and yup for form management use Tailwind css , Headless ui, and daisy ui";
   } else if (id === "2") {
     img = learning;
   } else if (id === "3") {
@@ -29,7 +34,8 @@ function PortfolioDetail() {
             <h2>Portfolio Detail</h2>
             <p>ID: {id}</p>
             <img src={img} alt="" />
-
+            <p>{para}</p>
+            <p>{challenge}</p>
           </div>
         </div>
       </div>
@@ -43,6 +49,8 @@ function PortfolioDetail() {
           <h2>Portfolio Detail</h2>
           <p>ID: {id}</p>
           <img src={img} alt="" />
+          <p>{para}</p>
+          <p>{challenge}</p>
         </div>
       </div>
     </div>
