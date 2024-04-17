@@ -31,10 +31,10 @@ function PortfolioDetail() {
           <MobileBar />
         </div>
         <div>
-          <div className="border my-10">
+          <div className="border flex flex-col space-y-5  my-10">
             <h2>Portfolio Detail</h2>
             <p>ID: {id}</p>
-            <img src={img} alt="" />
+            <img className="rounded-xl" src={img} alt="" />
             <p>{para}</p>
             <p>challenge: {challenge}</p>
           </div>
@@ -46,10 +46,10 @@ function PortfolioDetail() {
             <WideScreenNavBar />
           </Link>
         </div>
-        <div className="w-9/12 border my-5 rounded-lg">
+        <div className="w-9/12  border my-5 rounded-lg">
           <h2>Portfolio Detail</h2>
           <p>ID: {id}</p>
-          <img src={img} alt="" />
+          <img className="w-10/12 mx-auto rounded-xl" src={img} alt="" />
           <p>{para}</p>
           <p>challenge: {challenge}</p>
         </div>
