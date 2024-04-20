@@ -6,7 +6,7 @@ import tmdb from "../media/tmdblogo.png";
 import learning from "../media/learning.png";
 import weather from "../media/weather.png";
 import shop from "../media/shop.png";
-import tmdbVideo from "../media/TMDB.mp4"
+import tmdbVideo from "../media/TMDB.mp4";
 function PortfolioDetail() {
   const { id } = useParams();
   let img;
@@ -24,8 +24,8 @@ function PortfolioDetail() {
     img = weather;
   } else {
     img = shop;
-    para= 
-    "I designed and developed with React an shop website as part of my training to enhance my web development skills."
+    para =
+      "I designed and developed with React an shop website as part of my training to enhance my web development skills.";
   }
   return (
     <div>
@@ -55,7 +55,10 @@ function PortfolioDetail() {
           <img className="w-10/12 mx-auto rounded-2xl" src={img} alt="" />
           <p>{para}</p>
           <p>challenge: {challenge}</p>
-          <video >
+          {/* <video>
+            <source src={tmdbVideo} type="video/mp4" />
+          </video> */}
+          <video controls autoPlay className="w-full">
             <source src={tmdbVideo} type="video/mp4" />
           </video>
         </div>
