@@ -20,8 +20,7 @@ function HeroHeader({ HeroHeaderRef }) {
         <div className="space-y-5 lg:space-y-10 ">
           <h1 className="font-bold text-2xl md:text-4xl">I 'm Ali Sheikhali</h1>
           <p>
-            Computer Engineering student and NLP researcher at Queen's
-            University
+          I've been learning front-end programming for about 1 year
           </p>
         </div>
         <div className="flex flex-col md:flex-row gap-5 font-bold">
