@@ -52,15 +52,12 @@ function PortfolioDetail() {
         <div className="w-9/12  border my-5 rounded-lg">
           <h2>Portfolio Detail</h2>
           <p>ID: {id}</p>
-          <img className="w-10/12 mx-auto rounded-2xl" src={img} alt="" />
+          {/* <img className="w-10/12 mx-auto rounded-2xl" src={img} alt="" /> */}
           <p>{para}</p>
-          <p>challenge: {challenge}</p>
-          {/* <video>
-            <source src={tmdbVideo} type="video/mp4" />
-          </video> */}
           <video controls autoPlay className="w-full">
             <source src={tmdbVideo} type="video/mp4" />
           </video>
+          <p>challenge: {challenge}</p>
         </div>
       </div>
     </div>
